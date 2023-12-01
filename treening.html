@@ -1,62 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Treeningu Mõju Tervisele</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header>
-        <h1>Sport ja Fitness Blogi</h1>
+        <h1><a id="mainpage" href="index.html">Sport ja Fitness Blogi</a></h1>
         <nav>
             <ul>
                 <li><a href="toitumine.html">Toitumine</a></li>
                 <li><a href="treening.html">Treening</a></li>
-                <li><a href="tervis.html">Tervis</a></li>
-                <li><a href="varustus.html">Varustus</a></li>
-                <li><a href="intervjuud.html">Intervjuud</a></li>
-                <li><a href="reisimine.html">Reisimine</a></li>
-                <li><a href="elustiil.html">Elustiil</a></li>
+                <li><a href="#tervis">Tervis</a></li>
+                <li><a href="#varustus">Varustus</a></li>
+                <li><a href="#intervjuud">Intervjuud</a></li>
+                <li><a href="#reisimine">Reisimine</a></li>
+                <li><a href="#elustiil">Elustiil</a></li>
             </ul>
         </nav>
     </header>
-    <section id="treening">
-        <h2>Treening</h2>
-        <p>
-            Treening on oluline osa sportlikust elustiilist. Õige treening aitab arendada jõudu, vastupidavust ja
-            painduvust.
-            Siin on mõned põhilised treeningunäited:
-        </p>
+    <h1 id="pealkiri">🏋️‍♂️ Treeningu Mõju Tervisele 💪</h1>
 
-        <div class="exercise">
-            <img src="data:image/jpeg;base64,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"
-                alt="Push-ups">
-            <h3>Kätekõverdused</h3>
-            <p>
-                Kätekõverdused on suurepärane harjutus ülakeha tugevdamiseks. Asetage käed õlgade laiuselt maha, hoia
-                keha
-                sirge
-                ja
-                tehke kätekõverdusi.
-            </p>
-        </div>
 
-        <div class="exercise">
-            <img src="https://img.freepik.com/free-photo/young-happy-sportswoman-running-road-morning-copy-space_637285-3758.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais"
-                alt="Jogging">
-            <h3>Jooksmine</h3>
-            <p>
-                Jooksmine on suurepärane südame-veresoonkonna treening. Tehke seda regulaarselt, et parandada
-                vastupidavust
-                ja
-                põletada kaloreid.
-            </p>
-        </div>
-
+    <section id="sissejuhatus">
+        <p>🌟 Treeningul on mitmekülgne mõju meie tervisele, hõlmates nii füüsilist kui vaimset heaolu. Selles artiklis
+            vaatleme, kuidas regulaarne treenimine võib oluliselt parandada meie elukvaliteeti.</p>
     </section>
+
+    <section id="fuusiline-tervis">
+        <h2>🏃 Füüsiline Tervis</h2>
+        <p>Füüsiline aktiivsus on tihedalt seotud tervislike südame-veresoonkonna süsteemi ja tugevate lihastega. Üks
+            märkimisväärne uuring näitas, et regulaarne treenimine vähendab oluliselt südamehaiguste riski (<a
+                href="link-uuringule-1">Allikas: American Heart Association</a>).</p>
+        <p>Lisaks aitab treening hoida meie kehakaalu kontrolli all, mis omakorda mõjutab positiivselt luude tervist ja
+            üldist elujõulisust. 🏋️‍♀️</p>
+    </section>
+
+    <section id="vaimne-tervis">
+        <h2>😌 Vaimne Tervis</h2>
+        <p>Regulaarne treenimine on osutunud tõhusaks ärevuse ja depressiooni vastu võitlemisel. Kui me treenime,
+            vabanevad ajus endorfiinid, mis on looduslikud "õnnehormoonid". See omakorda parandab meeleolu ja vähendab
+            stressitaset (<a href="link-uuringule-2">Allikas: Journal of Psychiatry and Neuroscience</a>).</p>
+        <p>Lisaks aitab treenimine parandada unekvaliteeti, suurendades sügava une aega ja vähendades unetust. 😴</p>
+    </section>
+
+    <section id="teadusuuringud">
+        <h2>🔬 Teadusuuringud</h2>
+        <p>Siin on mõned teadusuuringud, mis toetavad treeningu positiivset mõju tervisele:</p>
+        <ul>
+            <li><a href="link-uuringule-1">Uuring: Füüsiline aktiivsus ja südame tervis</a></li>
+            <li><a href="link-uuringule-2">Uuring: Treeningu mõju vaimsele tervisele</a></li>
+        </ul>
+    </section>
+
+    <section id="kokkuvote">
+        <h2>🌐 Kokkuvõte</h2>
+        <p>Kokkuvõtvalt võib öelda, et treening on investeering meie tervisesse, mis toob kaasa mitmeid füüsilisi ja
+            vaimseid hüvesid. Oluline on leida endale sobiv treeningvorm ning muuta see osaks igapäevasest elustiilist.
+            💡</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sport ja Fitness Blogi</p>
+    </footer>
+
 </body>
 
 </html>

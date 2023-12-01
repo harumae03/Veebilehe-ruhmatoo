@@ -1,12 +1,19 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #0B0C10;
+    background-image: url('https://images.unsplash.com/photo-1517245386807-9b4d0dd9c9e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGJsb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
 }
 
+
+
+
+
+
+
 header {
-    background-color: #333;
+    background-color: #0B0C10;
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -34,20 +41,23 @@ nav a:hover {
     color: #ffcc00;
 }
 
+p {
+    color: white;
+}
+
 section {
     margin: 20px;
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #333;
+    color: #66FCF1;
 }
 
 h3 {
-    color: #333;
+    color: #66FCF1;
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -64,8 +74,13 @@ h3 {
     margin-bottom: 10px;
 }
 
+#pealkiri {
+    text-align: center;
+    justify-content: center;
+}
+
 footer {
-    background-color: #333;
+    background-color: #0B0C10;
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -74,6 +89,13 @@ footer {
     width: 100%;
 }
 
+#tutvustus {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
 
 .btn {
     display: inline-block;
@@ -113,3 +135,157 @@ footer {
     margin-bottom: 10px;
 }
 
+#ig {
+    background-color: #E1306C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#ig:hover {
+    background-color: #C13584;
+}
+
+#fb {
+    background-color: #1877F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Facebook_svg-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#fb:hover {
+    background-color: #0A66C2;
+}
+
+#youtube {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Youtube3_svg-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#youtube:hover {
+    background-color: #CC0000;
+}
+
+
+
+body {
+    font-family: 'Roboto', monospace;
+
+
+    /* Muudetud body taustavärv */
+    color: white;
+    /* Muudetud teksti värv */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+nav ul {
+    display: flex;
+    /* Muudetud navigatsioonimenüü elementide paigutus horisontaalseks */
+    justify-content: space-around;
+    /* Jaotatud lingid võrdselt üksteise vahele */
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    /* Muudetud navigatsioonilingi teksti värv */
+    text-decoration: none;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6:hover {
+    color: #ffcc00;
+}
+
+p {
+    color: white;
+    /* Muudetud paragrahvi teksti värv */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #0B0C10;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+#login,
+#signup {
+    text-align: end;
+    background-color: #0077b6;
+    color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: auto;
+}
+
+#login:hover,
+#signup:hover {
+    background-color: #caf0f8;
+}
+
+#user-buttons {
+    text-align: right;
+}
